@@ -1,0 +1,21 @@
+message IMUInfo{
+	optional float time_stamp=8;
+	optional bool isStamp = 9;
+	optional string sensorID = 3;
+	optional float acc_x = 1;
+	optional float acc_y = 2;
+	optional float acc_z = 4;
+	optional float angular_x =5;
+	optional float angular_y =6;
+	optional float angular_z = 7;
+
+
+	optional float USensorForward = 10;
+	optional float USensorDownward = 11;
+
+	optional bytes piCamImage = 12;
+	optional int32 imageHeight = 14;
+	optional int32 imageWidth = 13;
+
+}
+
